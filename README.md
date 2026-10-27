@@ -24,7 +24,7 @@ void setup() {
 }
 void loop() {
   if (digitalRead(buttonPin) == HIGH) tone(buzzerPin, 1000);
-  else noTone(buzzerPin);
+  else noTone(buzzerPin);}
 }
 ⚙️ How it Works
 1. Normal: LOW, buzzer silent
