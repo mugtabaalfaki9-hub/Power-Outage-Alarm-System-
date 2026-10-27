@@ -23,8 +23,19 @@ void setup() {
   pinMode(buttonPin, INPUT);
   pinMode(buzzerPin, OUTPUT);
 }
-void loop() {
-  if (digitalRead(buttonPin) == HIGH) tone(buzzerPin, 1000);
+void loop() {  if (digitalRead(buttonPin) == HIGH) tone(buzzerPin, 1000);
   else noTone(buzzerPin);
-}MS alert
-ngs
+}
+```
+⚙️ How it works
+1. Normal: LOW, buzzer silent
+2. Outage: HIGH, buzzer at 1000Hz
+3. Restored: LOW, stops
+
+🚀 Live Simulation
+**[Click here to try Live Simulation](https://www.tinkercad.com/things/9leJTsCdcSo-power-outage-alarm)**
+
+🔮 Future Improvements
+- Replace button with AC Voltage Sensor
+- Add Relay for Emergency Light
+- Add GSM SIM800L for SMS alerts
